@@ -1,0 +1,127 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.comment {
+  font-style: italic;
+  color: #999999;
+}
+
+.storage {
+}
+
+.string {
+  color: #FF6600;
+}
+
+.constant.numeric {
+  color: #33CC00;
+}
+
+.constant.language {
+}
+
+.constant.character, .constant.other {
+}
+
+.variable.language, .variable.other {
+  color: #0099CC;
+}
+
+.keyword {
+  color: #993300;
+}
+
+.entity.name.class {
+}
+
+.entity.other.inherited-class {
+}
+
+.entity.name.function {
+  color: #FF0000;
+}
+
+.variable.parameter {
+}
+
+.entity.name.tag {
+  color: #FF0000;
+}
+
+.entity.other.attribute-name {
+  color: #993300;
+}
+
+.support.function {
+  color: #CC0000;
+}
+
+.support.constant {
+  color: #336699;
+}
+
+.support.type, .support.class {
+  color: #0099CC;
+}
+
+.support.other.variable {
+}
+
+.invalid {
+  background-color: #FF0000;
+}
+
+.constant {
+  color: #336699;
+}
